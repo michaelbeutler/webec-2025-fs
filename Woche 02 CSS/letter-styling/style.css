@@ -1,0 +1,58 @@
+body {
+  max-width: 800px;
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+
+.sender-column {
+    display: flex;
+    justify-content: right;
+  margin-top: 20px;
+}
+
+h1 {
+  font-size: 1.5em;
+}
+
+h2 {
+  font-size: 1.3em;
+  margin-top: 3em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #9999FF;
+}
+
+p {
+  text-align: justify;
+}
+
+p,ul,ol,dl,address {
+  font-size: 1.1em;
+}
+
+p, li, dd, dt, address {
+  line-height: 1.5;
+}
+
+a {
+  color: #3b73cb;
+}
+
+dt {
+  font-weight: bold;
+  font-style: italic;
+}
+
+strong {
+  color: #000087;
+}
+
+
+.blue {
+  color: blue;
+}
+
+.green {
+  color: green;
+}
