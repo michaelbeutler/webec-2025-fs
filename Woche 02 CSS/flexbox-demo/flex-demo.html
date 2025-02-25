@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Flexbox Demo</title>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            font-family: Helvetica, Arial, sans-serif;
+            margin-left: 20px;
+            color: #2e2e2e;
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+		p {
+			margin: 0;
+		}
+
+        .page {
+            margin: auto;
+            max-width: 1000px;
+        }
+
+		.layout {
+			display: flex;
+
+			> * {
+				padding: 0.5em;
+				background-color: #23ffa2;
+			}
+
+			nav {
+				flex: 0 0 200px;
+			}
+
+			main {
+				flex-grow: 1;
+				background-color: #cfe7ff;
+			}
+
+			aside {
+				flex-basis: 150px;
+			}
+		}
+
+    </style>
+</head>
+<body>
+<div class="page">
+    <h1>Flexbox Demo</h1>
+    <div class="layout">
+        <nav class="sidebar">
+            Navigation
+        </nav>
+        <main>
+            <h2>Column Layout</h2>
+            <p>Test</p>
+            <h2>Flexbox</h2>
+        </main>
+        <aside class="sidebar">
+            About the author
+        </aside>
+    </div>
+</div>
+</body>
+</html>
