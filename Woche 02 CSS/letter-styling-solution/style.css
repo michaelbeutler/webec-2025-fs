@@ -1,0 +1,53 @@
+body {
+    max-width: 800px;
+    margin: 0 auto;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+.sender-column {
+    margin-top: 2em;
+    margin-left: 60%;
+}
+
+h1 {
+    font-size: 1.5em;
+    margin-top: 3em;
+}
+
+h2 {
+    font-size: 1.3em;
+    margin-top: 2em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #70709c;
+}
+
+p, ul, ol, dl, address {
+    font-size: 1.1em;
+}
+
+p, li, dd, dt, address {
+    line-height: 1.5;
+}
+
+p, dd, li {
+    text-align: justify;
+}
+
+a {
+    color: #8e8eff;
+}
+
+dt {
+    font-weight: bold;
+    font-style: italic;
+}
+
+strong {
+    color: #000087;
+}
+
+.signature {
+    height: 3em;
+}
