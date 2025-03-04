@@ -37,7 +37,7 @@ Füge folgende Dependency zur POM-Datei hinzu:
 <dependency>
     <groupId>io.pebbletemplates</groupId>
     <artifactId>pebble-spring-boot-starter</artifactId>
-    <version>3.2.2</version>
+    <version>3.2.3</version>
 </dependency>
 ```
 
