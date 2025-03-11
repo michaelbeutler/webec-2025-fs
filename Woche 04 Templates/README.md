@@ -13,7 +13,7 @@ Pebble Dokumentation: https://pebbletemplates.io
 
 ### 1. Schleifen in Templates (Vorlesung)
 
-Mache dich mit dem Code in «contactlist-pebble» vertraut. Beachte insbesondere den vorhandenen Controller und das dazugehörige Template. Kompiliere und starte die App und prüfe, dass sie unter http://localhost:8080/contacts erreichbar ist (unter [/](http://localhost:8080/) gibt es vorerst einen Fehler).
+Mache dich mit dem Code im Projekt «contactlist-pebble» vertraut. Beachte insbesondere den vorhandenen Controller und das dazugehörige Template. Kompiliere und starte die App und prüfe, dass sie unter http://localhost:8080/contacts erreichbar ist (unter [/](http://localhost:8080/) gibt es vorerst einen Fehler).
 
 Erweitere das Contacts-Template so, dass die Liste von Kontakten angezeigt wird. Dafür brauchst du `{% for … %}` und das `contactList`-Attribut aus dem Model. Jeder der Einträge soll ein Link sein, der auf `/contacts/{id}` verweist, wobei `{id}` die ID des entsprechenden Kontakts ist. Für diese URLs gibt es bereits ein Mapping im vorhandenen Controller, welches wieder dasselbe Template zurückgibt.
 
