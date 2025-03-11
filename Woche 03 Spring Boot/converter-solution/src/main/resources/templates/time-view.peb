@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Time</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<main>
+		<h1>Current Time with Pebble</h1>
+		<p><a href="/">Back</a></p>
+		<p>With TimeProvider and TimeFormatter</p>
+		<p>
+			Time: {{ time }}
+		</p>
+		<p>
+			Count: {{ count }} (to show that TimeProvider is singleton)
+		</p>
+	</main>
+</body>
+</html>

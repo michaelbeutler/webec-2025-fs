@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Currency converter</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+	<h1>Currency converter</h1>
+	<p><a href="/">Back</a></p>
+	<h2>Input</h2>
+	<form method="get" action="currency">
+		<p>
+			<label for="feet">From currency</label>
+			<select name="from">
+				{% for currency in currencies %}
+					<option value="{{ currency }}" {% if currency == from %}selected{% endif %}>{{ currency }}</option>
+				{% endfor %}
+			</select>
+		</p>
+		<p>
+			<label for="feet">To currency</label>
+			<select name="to">
+				{% for currency in currencies %}
+					<option value="{{ currency }}" {% if currency == to %}selected{% endif %}>{{ currency }}</option>
+				{% endfor %}
+			</select>
+		</p>
+		<p>
+			<label for="amount">Amount</label>
+			<input type="number" name="amount" value="{{ amount }}" required step="0.01">
+		</p>
+		<p>
+			<input type="submit" value="Convert">
+		</p>
+	</form>
+
+	{% if result %}
+		<h2>Result</h2>
+		<p>{{ result }} {{ to }}</p>
+	{% endif %}
+</main>
+</body>
+</html>
