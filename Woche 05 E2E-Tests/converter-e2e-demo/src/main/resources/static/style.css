@@ -1,0 +1,31 @@
+body {
+    font-family: Verdana, Tahoma, Arial, sans-serif;
+    font-size: 12px;
+    background-color: #E6F7E6;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 800px;
+    margin: auto;
+    background-color: #FFFFFF;
+    padding: 20px;
+    min-height: calc(100vh - 40px); /* subtract padding, otherwise it's too high */
+}
+
+label, input {
+    display: block;
+}
+
+label {
+    margin: 0.5em 0;
+}
+
+input {
+    padding: 0.5em;
+}
+
+.error {
+    color: red;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Length converter</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Length converter</h1>
+        <h2>Input</h2>
+		{% if validationErrors is defined %}
+			<div class="error">
+				<p>Validation errors:</p>
+				<ul>
+					{% for error in validationErrors %}
+						<li>{{ error.fieldName }}: {{ error.message }}</li>
+					{% endfor %}
+				</ul>
+			</div>
+		{% endif %}
+        <form method="get" action="convert">
+            <p>
+                <label for="feet">Feet</label>
+                <input type="number" name="feet" value="{{ input.feet | numberformat("#") }}" required step="1">
+            </p>
+            <p>
+                <label for="inches">Inches</label>
+                <input type="number" name="inches" value="{{ input.inches }}" required step="any">
+            </p>
+            <p>
+                <input type="submit" value="Convert">
+            </p>
+        </form>
+
+        {% if cm %}
+        <h2>Result</h2>
+        <p data-test-id="result">{{ cm }} cm, {{ mm }} mm</p>
+        {% endif %}
+    </main>
+</body>
+</html>
