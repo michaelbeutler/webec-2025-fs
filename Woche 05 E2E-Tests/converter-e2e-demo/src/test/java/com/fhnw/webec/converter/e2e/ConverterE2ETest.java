@@ -1,4 +1,4 @@
-package com.fhnw.webec.converter;
+package com.fhnw.webec.converter.e2e;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.AfterEach;
