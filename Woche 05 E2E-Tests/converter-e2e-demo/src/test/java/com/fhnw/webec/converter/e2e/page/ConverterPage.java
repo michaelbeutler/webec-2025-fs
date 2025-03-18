@@ -3,6 +3,7 @@ package com.fhnw.webec.converter.e2e.page;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
+// variant without @FindBy, using the driver directly
 public class ConverterPage {
 
 	private final WebDriver driver;

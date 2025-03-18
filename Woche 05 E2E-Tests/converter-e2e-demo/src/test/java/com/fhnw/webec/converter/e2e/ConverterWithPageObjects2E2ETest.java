@@ -1,6 +1,6 @@
 package com.fhnw.webec.converter.e2e;
 
-import com.fhnw.webec.converter.e2e.page.ConverterPage;
+import com.fhnw.webec.converter.e2e.page.ConverterPage2;
 import com.fhnw.webec.converter.e2e.page.NavigationPage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.jupiter.api.AfterEach;
@@ -14,7 +14,7 @@ import java.time.Duration;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class ConverterWithPageObjectsE2ETest {
+public class ConverterWithPageObjects2E2ETest {
 
 	WebDriver driver;
 
@@ -39,7 +39,7 @@ public class ConverterWithPageObjectsE2ETest {
 	@Test
 	public void ConvertImperialToMetric() {
 		var navigationPage = new NavigationPage(driver);
-		var converterPage = new ConverterPage(driver);
+		var converterPage = new ConverterPage2(driver);
 
 		navigationPage.goToConverter();
 

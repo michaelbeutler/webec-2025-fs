@@ -36,7 +36,7 @@ public class ConverterE2ETest {
 	}
 
 	@Test
-	public void e2eTest() {
+	public void ConvertImperialToMetric() {
 		driver.get("http://localhost:8080/convert");
 
 		driver.findElement(By.name("feet")).sendKeys("5");
