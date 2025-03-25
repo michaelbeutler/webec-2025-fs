@@ -76,6 +76,4 @@ Erweitere dazu die `ContactService`-Klasse um eine Methode `delete(contact)`, we
 
 ### 6. E-Mails-Adressen & Telefonnummern editieren (Knacknuss)
 
-Erweitere das Editier-Formular so, dass man E-Mail-Adressen und Telefonnummern löschen und hinzufügen kann. Als Vereinfachung kannst du das so lösen, dass in einem «Durchgang» immer nur eine neue E-Mail/Nummer dazukommen kann.
-
-**Tipp:** Das Löschen kann z. B. über Checkboxes gemacht werden, welche im `name` den Index der entsprechenden E-Mail/Nummer enthalten. Um beliebig viele Anfrage-Parameter zu unterstützen, kann eine Controller-Methode ein `HttpServletRequest`-Objekt mit einer Methode `getParameterMap()` entgegennehmen.
+Erweitere das Editier-Formular so, dass man E-Mail-Adressen und Telefonnummern löschen und hinzufügen kann. Als Vereinfachung kannst du das so lösen, dass in einem «Durchgang» immer nur eine neue E-Mail/Nummer dazukommen kann. Dies kann z.B. ermöglicht werden indem zu den bestehenden E-Mail/Nummer-Einträgen immer noch ein leeres Feld angeboten wird.
