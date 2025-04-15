@@ -1,0 +1,52 @@
+<html>
+<head lang="en">
+	<title>CSS Responsive Grid</title>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<style>
+		html {
+			font-family: Helvetica, sans-serif;
+		}
+
+		main {
+			display: grid;
+			grid-template-columns: 1fr 3fr 1fr;
+			grid-template-rows: 200px;
+		}
+
+		main > div {
+			box-sizing: border-box;
+			border: 3px orange solid;
+			padding: 5px;
+			margin-bottom: 5px;
+		}
+
+		@media screen and (max-width: 1000px) {
+			main {
+				grid-template-columns: 30% 70%;
+			}
+		}
+
+		@media screen and (max-width: 600px) {
+			main {
+				grid-template-columns: 100%;
+			}
+		}
+	</style>
+</head>
+<body>
+<header>
+	<h1>CSS Responsive Grid</h1>
+</header>
+<main>
+	<div>Box 1</div>
+	<div>Box 2</div>
+	<div>Box 3</div>
+	<div>Box 4</div>
+	<div>Box 5</div>
+	<div>Box 6</div>
+	<div>Box 7</div>
+	<div>Box 8</div>
+</main>
+</body>
+</html>
