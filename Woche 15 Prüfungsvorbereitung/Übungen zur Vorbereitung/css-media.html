@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS</title>
+	<style>
+
+		body {
+			--title-size: 30px;
+		}
+
+		h1, h2 {
+			font-size: var(--title-size);
+		}
+
+		@media screen and (max-height: 200px) {
+			h1 {
+				--title-size: 20px;
+			}
+		}
+
+		.outer {
+			height: 300px;
+			background-color: lime;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.centered {
+			width: 400px;
+			background-color: lightblue;
+		}
+	</style>
+</head>
+<body>
+	<h1>Test Heading</h1>
+	<h2>Test Heading</h2>
+	<div class="outer">
+		<div class="centered">Centered</div>
+	</div>
+</body>
+</html>

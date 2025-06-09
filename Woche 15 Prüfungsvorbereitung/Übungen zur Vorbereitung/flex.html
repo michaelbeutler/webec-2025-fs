@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Flex</title>
+	<style>
+
+		body {
+			margin: 0;
+		}
+
+		.layout {
+			display: flex;
+			flex-direction: column;
+			height: 100vh;
+		}
+
+		header {
+			background-color: blue;
+			flex: 0 0 50px;
+		}
+
+		main {
+			background-color: grey;
+			flex: 1 0 100px;
+		}
+
+		footer {
+			background-color: green;
+			flex: 0 0 100px;
+		}
+
+		.large-content {
+			height: 2000px;
+			background-color: yellow;
+		}
+	</style>
+</head>
+<body>
+	<div class="layout">
+		<header>H</header>
+		<main>
+			<div class="large-content">Test</div>
+		</main>
+		<footer>F</footer>
+	</div>
+</body>
+</html>
